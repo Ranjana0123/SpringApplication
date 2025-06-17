@@ -26,7 +26,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
-          file: Dockerfile.ci.ci       # If you're using a custom Dockerfile.ci
+          file: Dockerfile.ci       # If you're using a custom Dockerfile
           push: true
           tags: registry-url.io/repo/image:v1,registry-url.io/repo/image:latest
           username: ${{ secrets.DOCKER_USERNAME }}
