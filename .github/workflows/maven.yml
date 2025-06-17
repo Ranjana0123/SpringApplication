@@ -22,7 +22,7 @@ jobs:
       - name: Build with Maven
         run: mvn clean install
 
-      - name: Debug: Check if JAR exists
+      - name: Debug
         run: ls -l target/
 
       - name: Build & Push Docker image
