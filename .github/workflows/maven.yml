@@ -53,4 +53,4 @@ jobs:
           context: .                    # root of your repo
           file: Dockerfile             # or specify if in target/
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/my-app:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/springtest:latest
