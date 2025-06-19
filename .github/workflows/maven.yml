@@ -1,3 +1,4 @@
+# .github/workflows/docker-springboot.yml
 name: Spring Boot CI/CD
 
 on:
@@ -52,4 +53,4 @@ jobs:
           context: .                    # root of your repo
           file: Dockerfile             # or specify if in target/
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/springtest:latest
+          tags: ranjana123trivedi/springtest:latest
